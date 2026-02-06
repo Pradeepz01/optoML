@@ -11,9 +11,12 @@ The design accepts input data when `in_valid` and `in_ready` are asserted, store
 
 ```text
 pipeline-register/
-├── pipeline_reg.sv
-├── tb_pipeline_reg.sv
-└── README.md
+├── pipeline_reg.sv        # RTL implementation
+├── tb_pipeline_reg.sv    # Testbench
+├── images/
+│   ├── SimulationWaveform.png
+│   └── RTLView.png
+└── README.md              # Documentation
 ```
 
 
@@ -41,6 +44,7 @@ pipeline-register/
 - `out_data`  : Output data bus  
 
 ---
+![RTL View](images/RTLView.png)
 
 ## Testbench
 
@@ -51,6 +55,7 @@ The included testbench verifies:
 - Back-to-back data transfers
 
 Simulation completes with a success message after all scenarios are exercised.
+![Simulation Waveform](images/SimulationWaveform.png)
 
 ---
 
